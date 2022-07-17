@@ -13,6 +13,8 @@
 		D45F51242884965B009CCF94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F511228849659009CCF94 /* ContentView.swift */; };
 		D45F51252884965B009CCF94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45F51132884965B009CCF94 /* Assets.xcassets */; };
 		D45F51262884965B009CCF94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45F51132884965B009CCF94 /* Assets.xcassets */; };
+		D45F513028849812009CCF94 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45F512F28849812009CCF94 /* Launch Screen.storyboard */; };
+		D45F513128849812009CCF94 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45F512F28849812009CCF94 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D45F51182884965B009CCF94 /* WordleClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordleClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45F511E2884965B009CCF94 /* WordleClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordleClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45F51202884965B009CCF94 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D45F512F28849812009CCF94 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D45F513228849910009CCF94 /* WordleClone--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WordleClone--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 		D45F510B28849659009CCF94 = {
 			isa = PBXGroup;
 			children = (
+				D45F513228849910009CCF94 /* WordleClone--iOS--Info.plist */,
 				D45F511028849659009CCF94 /* Shared */,
 				D45F511F2884965B009CCF94 /* macOS */,
 				D45F51192884965B009CCF94 /* Products */,
@@ -56,6 +61,7 @@
 			children = (
 				D45F511128849659009CCF94 /* WordleCloneApp.swift */,
 				D45F511228849659009CCF94 /* ContentView.swift */,
+				D45F512F28849812009CCF94 /* Launch Screen.storyboard */,
 				D45F51132884965B009CCF94 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -157,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45F513028849812009CCF94 /* Launch Screen.storyboard in Resources */,
 				D45F51252884965B009CCF94 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45F513128849812009CCF94 /* Launch Screen.storyboard in Resources */,
 				D45F51262884965B009CCF94 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,11 +320,14 @@
 				DEVELOPMENT_TEAM = 47E3RRLYKE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WordleClone--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -342,11 +353,14 @@
 				DEVELOPMENT_TEAM = 47E3RRLYKE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WordleClone--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
