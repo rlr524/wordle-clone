@@ -25,6 +25,10 @@
 		D45F51452884B679009CCF94 /* WordleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F51432884B679009CCF94 /* WordleDataModel.swift */; };
 		D45F51472884BB45009CCF94 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F51462884BB45009CCF94 /* Global.swift */; };
 		D45F51482884BB45009CCF94 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F51462884BB45009CCF94 /* Global.swift */; };
+		D4CDF8812888971E002BB7D4 /* LetterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CDF8802888971E002BB7D4 /* LetterButtonView.swift */; };
+		D4CDF8822888971E002BB7D4 /* LetterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CDF8802888971E002BB7D4 /* LetterButtonView.swift */; };
+		D4CDF8842888ADAB002BB7D4 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CDF8832888ADAB002BB7D4 /* Keyboard.swift */; };
+		D4CDF8852888ADAB002BB7D4 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CDF8832888ADAB002BB7D4 /* Keyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,8 @@
 		D45F513F2884AADA009CCF94 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
 		D45F51432884B679009CCF94 /* WordleDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleDataModel.swift; sourceTree = "<group>"; };
 		D45F51462884BB45009CCF94 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		D4CDF8802888971E002BB7D4 /* LetterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterButtonView.swift; sourceTree = "<group>"; };
+		D4CDF8832888ADAB002BB7D4 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,8 @@
 			children = (
 				D45F511228849659009CCF94 /* GameView.swift */,
 				D45F513F2884AADA009CCF94 /* GuessView.swift */,
+				D4CDF8802888971E002BB7D4 /* LetterButtonView.swift */,
+				D4CDF8832888ADAB002BB7D4 /* Keyboard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -236,9 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CDF8812888971E002BB7D4 /* LetterButtonView.swift in Sources */,
 				D45F51232884965B009CCF94 /* GameView.swift in Sources */,
 				D45F51402884AADA009CCF94 /* GuessView.swift in Sources */,
 				D45F513C2884A953009CCF94 /* Guess.swift in Sources */,
+				D4CDF8842888ADAB002BB7D4 /* Keyboard.swift in Sources */,
 				D45F51352884A4A9009CCF94 /* Color+Extension.swift in Sources */,
 				D45F51442884B679009CCF94 /* WordleDataModel.swift in Sources */,
 				D45F51212884965B009CCF94 /* WordleCloneApp.swift in Sources */,
@@ -250,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CDF8822888971E002BB7D4 /* LetterButtonView.swift in Sources */,
 				D45F51242884965B009CCF94 /* GameView.swift in Sources */,
 				D45F51412884AADA009CCF94 /* GuessView.swift in Sources */,
 				D45F513D2884A953009CCF94 /* Guess.swift in Sources */,
+				D4CDF8852888ADAB002BB7D4 /* Keyboard.swift in Sources */,
 				D45F51362884A4A9009CCF94 /* Color+Extension.swift in Sources */,
 				D45F51452884B679009CCF94 /* WordleDataModel.swift in Sources */,
 				D45F51222884965B009CCF94 /* WordleCloneApp.swift in Sources */,

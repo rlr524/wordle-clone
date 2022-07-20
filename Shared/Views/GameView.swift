@@ -11,15 +11,23 @@ struct GameView: View {
     @EnvironmentObject var dm: WordleDataModel
     var body: some View {
         NavigationView {
-            VStack(spacing: 3) {
-                GuessView(guess: $dm.guesses[0])
-                GuessView(guess: $dm.guesses[1])
-                GuessView(guess: $dm.guesses[2])
-                GuessView(guess: $dm.guesses[3])
-                GuessView(guess: $dm.guesses[4])
-                GuessView(guess: $dm.guesses[5])
+            VStack{
+                Spacer()
+                VStack(spacing: 3) {
+                    GuessView(guess: $dm.guesses[0])
+                    GuessView(guess: $dm.guesses[1])
+                    GuessView(guess: $dm.guesses[2])
+                    GuessView(guess: $dm.guesses[3])
+                    GuessView(guess: $dm.guesses[4])
+                    GuessView(guess: $dm.guesses[5])
+                }
+                .frame(width: Global.boardWidth, height: (6 * Global.boardWidth) / 5)
+                Spacer()
+                Keyboard()
+                    .scaleEffect(Global.keyboardScale)
+                    .padding(.top)
+                Spacer()
             }
-            .frame(width: Global.boardWidth, height: (6 * Global.boardWidth) / 5)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(id: "help", placement: .navigationBarLeading, showsByDefault: true) {
@@ -60,7 +68,7 @@ struct GameView_Previews: PreviewProvider {
     static var previews: some View {
         GameView()
             .environmentObject(WordleDataModel())
-            .previewInterfaceOrientation(.landscapeLeft)
+            .previewInterfaceOrientation(.portrait)
         GameView()
             .environmentObject(WordleDataModel())
             .preferredColorScheme(.dark)
