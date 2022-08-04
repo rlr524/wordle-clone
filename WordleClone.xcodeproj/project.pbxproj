@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D436F35E289B1C6700B6AB17 /* Flip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D436F35D289B1C6700B6AB17 /* Flip.swift */; };
+		D436F35F289B1C6700B6AB17 /* Flip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D436F35D289B1C6700B6AB17 /* Flip.swift */; };
 		D45F51212884965B009CCF94 /* WordleCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F511128849659009CCF94 /* WordleCloneApp.swift */; };
 		D45F51222884965B009CCF94 /* WordleCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F511128849659009CCF94 /* WordleCloneApp.swift */; };
 		D45F51232884965B009CCF94 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F511228849659009CCF94 /* GameView.swift */; };
@@ -34,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D436F35D289B1C6700B6AB17 /* Flip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flip.swift; sourceTree = "<group>"; };
 		D45F511128849659009CCF94 /* WordleCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleCloneApp.swift; sourceTree = "<group>"; };
 		D45F511228849659009CCF94 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		D45F51132884965B009CCF94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				D4FF62862889FECC0016708B /* Shake.swift */,
+				D436F35D289B1C6700B6AB17 /* Flip.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -259,6 +263,7 @@
 				D4CDF8812888971E002BB7D4 /* LetterButtonView.swift in Sources */,
 				D45F51232884965B009CCF94 /* GameView.swift in Sources */,
 				D45F51402884AADA009CCF94 /* GuessView.swift in Sources */,
+				D436F35E289B1C6700B6AB17 /* Flip.swift in Sources */,
 				D45F513C2884A953009CCF94 /* Guess.swift in Sources */,
 				D4CDF8842888ADAB002BB7D4 /* Keyboard.swift in Sources */,
 				D45F51352884A4A9009CCF94 /* Color+Extension.swift in Sources */,
@@ -276,6 +281,7 @@
 				D4CDF8822888971E002BB7D4 /* LetterButtonView.swift in Sources */,
 				D45F51242884965B009CCF94 /* GameView.swift in Sources */,
 				D45F51412884AADA009CCF94 /* GuessView.swift in Sources */,
+				D436F35F289B1C6700B6AB17 /* Flip.swift in Sources */,
 				D45F513D2884A953009CCF94 /* Guess.swift in Sources */,
 				D4CDF8852888ADAB002BB7D4 /* Keyboard.swift in Sources */,
 				D45F51362884A4A9009CCF94 /* Color+Extension.swift in Sources */,
