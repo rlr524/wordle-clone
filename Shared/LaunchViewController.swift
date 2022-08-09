@@ -7,6 +7,6 @@
 
 import UIKit
 
-class LaunchViewController : UIViewController {
-    
+class LaunchViewController: UIViewController {
+
 }

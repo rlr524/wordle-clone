@@ -1,0 +1,17 @@
+excluded:
+  - .playground
+
+disabled_rules:
+  - colon
+
+opt_in_rules:
+  - force_unwrapping
+
+identifier_name:
+  min_length:
+    error: 3
+  excluded:
+    - vm
+    - vc
+    - dm
+    - id

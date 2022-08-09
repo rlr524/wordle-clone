@@ -27,6 +27,14 @@
 		D45F51452884B679009CCF94 /* WordleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F51432884B679009CCF94 /* WordleDataModel.swift */; };
 		D45F51472884BB45009CCF94 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F51462884BB45009CCF94 /* Global.swift */; };
 		D45F51482884BB45009CCF94 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F51462884BB45009CCF94 /* Global.swift */; };
+		D49367DA289C7F87006344EE /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49367D9289C7F87006344EE /* ToastView.swift */; };
+		D49367DB289C7F87006344EE /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49367D9289C7F87006344EE /* ToastView.swift */; };
+		D49367DE289CA825006344EE /* AvailableWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49367DD289CA825006344EE /* AvailableWords.swift */; };
+		D49367DF289CA825006344EE /* AvailableWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49367DD289CA825006344EE /* AvailableWords.swift */; };
+		D4A0EDF528A1EA46004858FD /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0EDF428A1EA46004858FD /* Statistic.swift */; };
+		D4A0EDF628A1EA46004858FD /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0EDF428A1EA46004858FD /* Statistic.swift */; };
+		D4A0EDFB28A2E913004858FD /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0EDFA28A2E913004858FD /* StatsView.swift */; };
+		D4A0EDFC28A2E913004858FD /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0EDFA28A2E913004858FD /* StatsView.swift */; };
 		D4CDF8812888971E002BB7D4 /* LetterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CDF8802888971E002BB7D4 /* LetterButtonView.swift */; };
 		D4CDF8822888971E002BB7D4 /* LetterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CDF8802888971E002BB7D4 /* LetterButtonView.swift */; };
 		D4CDF8842888ADAB002BB7D4 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CDF8832888ADAB002BB7D4 /* Keyboard.swift */; };
@@ -50,6 +58,10 @@
 		D45F513F2884AADA009CCF94 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
 		D45F51432884B679009CCF94 /* WordleDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleDataModel.swift; sourceTree = "<group>"; };
 		D45F51462884BB45009CCF94 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		D49367D9289C7F87006344EE /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		D49367DD289CA825006344EE /* AvailableWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableWords.swift; sourceTree = "<group>"; };
+		D4A0EDF428A1EA46004858FD /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
+		D4A0EDFA28A2E913004858FD /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		D4CDF8802888971E002BB7D4 /* LetterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterButtonView.swift; sourceTree = "<group>"; };
 		D4CDF8832888ADAB002BB7D4 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		D4FF62862889FECC0016708B /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
@@ -86,6 +98,7 @@
 		D45F511028849659009CCF94 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D49367DC289CA7FF006344EE /* Data */,
 				D4FF62852889FEB10016708B /* Animations */,
 				D45F513A2884A941009CCF94 /* Models */,
 				D45F513E2884AAC2009CCF94 /* Views */,
@@ -128,6 +141,7 @@
 			children = (
 				D45F513B2884A953009CCF94 /* Guess.swift */,
 				D45F51462884BB45009CCF94 /* Global.swift */,
+				D4A0EDF428A1EA46004858FD /* Statistic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -139,6 +153,8 @@
 				D45F513F2884AADA009CCF94 /* GuessView.swift */,
 				D4CDF8802888971E002BB7D4 /* LetterButtonView.swift */,
 				D4CDF8832888ADAB002BB7D4 /* Keyboard.swift */,
+				D49367D9289C7F87006344EE /* ToastView.swift */,
+				D4A0EDFA28A2E913004858FD /* StatsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,6 +165,14 @@
 				D45F51432884B679009CCF94 /* WordleDataModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D49367DC289CA7FF006344EE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D49367DD289CA825006344EE /* AvailableWords.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		D4FF62852889FEB10016708B /* Animations */ = {
@@ -170,6 +194,7 @@
 				D45F51142884965B009CCF94 /* Sources */,
 				D45F51152884965B009CCF94 /* Frameworks */,
 				D45F51162884965B009CCF94 /* Resources */,
+				D4A0EDF328A1D58B004858FD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -255,6 +280,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D4A0EDF328A1D58B004858FD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint is not installed.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D45F51142884965B009CCF94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -263,11 +308,15 @@
 				D4CDF8812888971E002BB7D4 /* LetterButtonView.swift in Sources */,
 				D45F51232884965B009CCF94 /* GameView.swift in Sources */,
 				D45F51402884AADA009CCF94 /* GuessView.swift in Sources */,
+				D49367DE289CA825006344EE /* AvailableWords.swift in Sources */,
 				D436F35E289B1C6700B6AB17 /* Flip.swift in Sources */,
+				D49367DA289C7F87006344EE /* ToastView.swift in Sources */,
+				D4A0EDF528A1EA46004858FD /* Statistic.swift in Sources */,
 				D45F513C2884A953009CCF94 /* Guess.swift in Sources */,
 				D4CDF8842888ADAB002BB7D4 /* Keyboard.swift in Sources */,
 				D45F51352884A4A9009CCF94 /* Color+Extension.swift in Sources */,
 				D4FF62872889FECC0016708B /* Shake.swift in Sources */,
+				D4A0EDFB28A2E913004858FD /* StatsView.swift in Sources */,
 				D45F51442884B679009CCF94 /* WordleDataModel.swift in Sources */,
 				D45F51212884965B009CCF94 /* WordleCloneApp.swift in Sources */,
 				D45F51472884BB45009CCF94 /* Global.swift in Sources */,
@@ -281,11 +330,15 @@
 				D4CDF8822888971E002BB7D4 /* LetterButtonView.swift in Sources */,
 				D45F51242884965B009CCF94 /* GameView.swift in Sources */,
 				D45F51412884AADA009CCF94 /* GuessView.swift in Sources */,
+				D49367DF289CA825006344EE /* AvailableWords.swift in Sources */,
 				D436F35F289B1C6700B6AB17 /* Flip.swift in Sources */,
+				D49367DB289C7F87006344EE /* ToastView.swift in Sources */,
+				D4A0EDF628A1EA46004858FD /* Statistic.swift in Sources */,
 				D45F513D2884A953009CCF94 /* Guess.swift in Sources */,
 				D4CDF8852888ADAB002BB7D4 /* Keyboard.swift in Sources */,
 				D45F51362884A4A9009CCF94 /* Color+Extension.swift in Sources */,
 				D4FF62882889FECC0016708B /* Shake.swift in Sources */,
+				D4A0EDFC28A2E913004858FD /* StatsView.swift in Sources */,
 				D45F51452884B679009CCF94 /* WordleDataModel.swift in Sources */,
 				D45F51222884965B009CCF94 /* WordleCloneApp.swift in Sources */,
 				D45F51482884BB45009CCF94 /* Global.swift in Sources */,

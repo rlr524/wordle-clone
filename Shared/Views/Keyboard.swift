@@ -9,12 +9,16 @@ import SwiftUI
 
 struct Keyboard: View {
     @EnvironmentObject var dm: WordleDataModel
-    // Using shorthand argument names; map takes a closure as its argument (because it's only one argument, we can remove the () that enclose arguments). In this case, our shorthand argument names in middleRowArray and bottomRowArray are the same as how topRowArray is written.
+    // Using shorthand argument names; map takes a closure as its argument (because it's only one argument,
+    // we can remove the () that enclose arguments). In this case, our shorthand argument names in middleRowArray
+    // and bottomRowArray are the same as how topRowArray is written.
     var topRowArray = "QWERTYUIOP".map({char in
-        String(char) //Same thing as saying "QWERTYUIOP"[char] or, in a correct syntax, first assigning "QWERTYUIOP" to varName then varName[char]
+        // Same thing as saying "QWERTYUIOP"[char] or, in a correct syntax, first assigning "QWERTYUIOP"
+        // to varName then varName[char]. 
+        String(char)
     })
-    var middleRowArray = "ASDFGHJKL".map{ String($0) }
-    var bottomRowArray = "ZXCVBNM".map{ String($0) }
+    var middleRowArray = "ASDFGHJKL".map { String($0) }
+    var bottomRowArray = "ZXCVBNM".map { String($0) }
         var body: some View {
             VStack {
                 HStack(spacing: 2) {

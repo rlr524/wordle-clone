@@ -2,6 +2,7 @@
 
 import Foundation
 
+// swiftlint:disable all
 enum Color: String {
 case correct, misplaced, wrong
     var prefix: String {
