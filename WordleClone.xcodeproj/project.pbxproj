@@ -31,6 +31,15 @@
 		D49367DB289C7F87006344EE /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49367D9289C7F87006344EE /* ToastView.swift */; };
 		D49367DE289CA825006344EE /* AvailableWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49367DD289CA825006344EE /* AvailableWords.swift */; };
 		D49367DF289CA825006344EE /* AvailableWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49367DD289CA825006344EE /* AvailableWords.swift */; };
+		D49ACD6D28A4305500048EA4 /* AnimeMangaWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49ACD6C28A4305500048EA4 /* AnimeMangaWords.swift */; };
+		D49ACD6E28A4305500048EA4 /* AnimeMangaWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49ACD6C28A4305500048EA4 /* AnimeMangaWords.swift */; };
+		D49ACD7128A431E300048EA4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49ACD7028A431E300048EA4 /* CoreData.framework */; };
+		D49ACD7328A452B400048EA4 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49ACD7228A452B400048EA4 /* UIWindow+Extension.swift */; };
+		D49ACD7428A452B400048EA4 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49ACD7228A452B400048EA4 /* UIWindow+Extension.swift */; };
+		D49ACD7628A46BD600048EA4 /* ColorSchemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49ACD7528A46BD600048EA4 /* ColorSchemeManager.swift */; };
+		D49ACD7728A46BD600048EA4 /* ColorSchemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49ACD7528A46BD600048EA4 /* ColorSchemeManager.swift */; };
+		D49ACD7928A46E1800048EA4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49ACD7828A46E1800048EA4 /* SettingsView.swift */; };
+		D49ACD7A28A46E1800048EA4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49ACD7828A46E1800048EA4 /* SettingsView.swift */; };
 		D4A0EDF528A1EA46004858FD /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0EDF428A1EA46004858FD /* Statistic.swift */; };
 		D4A0EDF628A1EA46004858FD /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0EDF428A1EA46004858FD /* Statistic.swift */; };
 		D4A0EDFB28A2E913004858FD /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0EDFA28A2E913004858FD /* StatsView.swift */; };
@@ -60,6 +69,11 @@
 		D45F51462884BB45009CCF94 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		D49367D9289C7F87006344EE /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		D49367DD289CA825006344EE /* AvailableWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableWords.swift; sourceTree = "<group>"; };
+		D49ACD6C28A4305500048EA4 /* AnimeMangaWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeMangaWords.swift; sourceTree = "<group>"; };
+		D49ACD7028A431E300048EA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		D49ACD7228A452B400048EA4 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		D49ACD7528A46BD600048EA4 /* ColorSchemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeManager.swift; sourceTree = "<group>"; };
+		D49ACD7828A46E1800048EA4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D4A0EDF428A1EA46004858FD /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
 		D4A0EDFA28A2E913004858FD /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		D4CDF8802888971E002BB7D4 /* LetterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterButtonView.swift; sourceTree = "<group>"; };
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49ACD7128A431E300048EA4 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +107,7 @@
 				D45F511028849659009CCF94 /* Shared */,
 				D45F511F2884965B009CCF94 /* macOS */,
 				D45F51192884965B009CCF94 /* Products */,
+				D49ACD6F28A431E300048EA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				D45F51342884A4A9009CCF94 /* Color+Extension.swift */,
+				D49ACD7228A452B400048EA4 /* UIWindow+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -155,6 +172,7 @@
 				D4CDF8832888ADAB002BB7D4 /* Keyboard.swift */,
 				D49367D9289C7F87006344EE /* ToastView.swift */,
 				D4A0EDFA28A2E913004858FD /* StatsView.swift */,
+				D49ACD7828A46E1800048EA4 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				D45F51432884B679009CCF94 /* WordleDataModel.swift */,
+				D49ACD7528A46BD600048EA4 /* ColorSchemeManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -171,8 +190,17 @@
 			isa = PBXGroup;
 			children = (
 				D49367DD289CA825006344EE /* AvailableWords.swift */,
+				D49ACD6C28A4305500048EA4 /* AnimeMangaWords.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		D49ACD6F28A431E300048EA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D49ACD7028A431E300048EA4 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D4FF62852889FEB10016708B /* Animations */ = {
@@ -308,8 +336,10 @@
 				D4CDF8812888971E002BB7D4 /* LetterButtonView.swift in Sources */,
 				D45F51232884965B009CCF94 /* GameView.swift in Sources */,
 				D45F51402884AADA009CCF94 /* GuessView.swift in Sources */,
+				D49ACD7328A452B400048EA4 /* UIWindow+Extension.swift in Sources */,
 				D49367DE289CA825006344EE /* AvailableWords.swift in Sources */,
 				D436F35E289B1C6700B6AB17 /* Flip.swift in Sources */,
+				D49ACD7628A46BD600048EA4 /* ColorSchemeManager.swift in Sources */,
 				D49367DA289C7F87006344EE /* ToastView.swift in Sources */,
 				D4A0EDF528A1EA46004858FD /* Statistic.swift in Sources */,
 				D45F513C2884A953009CCF94 /* Guess.swift in Sources */,
@@ -318,8 +348,10 @@
 				D4FF62872889FECC0016708B /* Shake.swift in Sources */,
 				D4A0EDFB28A2E913004858FD /* StatsView.swift in Sources */,
 				D45F51442884B679009CCF94 /* WordleDataModel.swift in Sources */,
+				D49ACD6D28A4305500048EA4 /* AnimeMangaWords.swift in Sources */,
 				D45F51212884965B009CCF94 /* WordleCloneApp.swift in Sources */,
 				D45F51472884BB45009CCF94 /* Global.swift in Sources */,
+				D49ACD7928A46E1800048EA4 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,8 +362,10 @@
 				D4CDF8822888971E002BB7D4 /* LetterButtonView.swift in Sources */,
 				D45F51242884965B009CCF94 /* GameView.swift in Sources */,
 				D45F51412884AADA009CCF94 /* GuessView.swift in Sources */,
+				D49ACD7428A452B400048EA4 /* UIWindow+Extension.swift in Sources */,
 				D49367DF289CA825006344EE /* AvailableWords.swift in Sources */,
 				D436F35F289B1C6700B6AB17 /* Flip.swift in Sources */,
+				D49ACD7728A46BD600048EA4 /* ColorSchemeManager.swift in Sources */,
 				D49367DB289C7F87006344EE /* ToastView.swift in Sources */,
 				D4A0EDF628A1EA46004858FD /* Statistic.swift in Sources */,
 				D45F513D2884A953009CCF94 /* Guess.swift in Sources */,
@@ -340,8 +374,10 @@
 				D4FF62882889FECC0016708B /* Shake.swift in Sources */,
 				D4A0EDFC28A2E913004858FD /* StatsView.swift in Sources */,
 				D45F51452884B679009CCF94 /* WordleDataModel.swift in Sources */,
+				D49ACD6E28A4305500048EA4 /* AnimeMangaWords.swift in Sources */,
 				D45F51222884965B009CCF94 /* WordleCloneApp.swift in Sources */,
 				D45F51482884BB45009CCF94 /* Global.swift in Sources */,
+				D49ACD7A28A46E1800048EA4 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
