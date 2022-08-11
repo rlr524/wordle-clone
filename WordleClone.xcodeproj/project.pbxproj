@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		D436F35E289B1C6700B6AB17 /* Flip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D436F35D289B1C6700B6AB17 /* Flip.swift */; };
 		D436F35F289B1C6700B6AB17 /* Flip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D436F35D289B1C6700B6AB17 /* Flip.swift */; };
+		D45784C928A591B9007D31D9 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45784C828A591B9007D31D9 /* HelpView.swift */; };
+		D45784CA28A591B9007D31D9 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45784C828A591B9007D31D9 /* HelpView.swift */; };
+		D45784CD28A5AAD3007D31D9 /* UbiquitousStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45784CC28A5AAD3007D31D9 /* UbiquitousStore.swift */; };
+		D45784CE28A5AAD3007D31D9 /* UbiquitousStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45784CC28A5AAD3007D31D9 /* UbiquitousStore.swift */; };
 		D45F51212884965B009CCF94 /* WordleCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F511128849659009CCF94 /* WordleCloneApp.swift */; };
 		D45F51222884965B009CCF94 /* WordleCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F511128849659009CCF94 /* WordleCloneApp.swift */; };
 		D45F51232884965B009CCF94 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F511228849659009CCF94 /* GameView.swift */; };
@@ -54,6 +58,9 @@
 
 /* Begin PBXFileReference section */
 		D436F35D289B1C6700B6AB17 /* Flip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flip.swift; sourceTree = "<group>"; };
+		D45784C828A591B9007D31D9 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		D45784CB28A5AA79007D31D9 /* WordleClone (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WordleClone (iOS).entitlements"; sourceTree = "<group>"; };
+		D45784CC28A5AAD3007D31D9 /* UbiquitousStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbiquitousStore.swift; sourceTree = "<group>"; };
 		D45F511128849659009CCF94 /* WordleCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleCloneApp.swift; sourceTree = "<group>"; };
 		D45F511228849659009CCF94 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		D45F51132884965B009CCF94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +110,7 @@
 		D45F510B28849659009CCF94 = {
 			isa = PBXGroup;
 			children = (
+				D45784CB28A5AA79007D31D9 /* WordleClone (iOS).entitlements */,
 				D45F513228849910009CCF94 /* WordleClone--iOS--Info.plist */,
 				D45F511028849659009CCF94 /* Shared */,
 				D45F511F2884965B009CCF94 /* macOS */,
@@ -159,6 +167,7 @@
 				D45F513B2884A953009CCF94 /* Guess.swift */,
 				D45F51462884BB45009CCF94 /* Global.swift */,
 				D4A0EDF428A1EA46004858FD /* Statistic.swift */,
+				D45784CC28A5AAD3007D31D9 /* UbiquitousStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +182,7 @@
 				D49367D9289C7F87006344EE /* ToastView.swift */,
 				D4A0EDFA28A2E913004858FD /* StatsView.swift */,
 				D49ACD7828A46E1800048EA4 /* SettingsView.swift */,
+				D45784C828A591B9007D31D9 /* HelpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -336,6 +346,7 @@
 				D4CDF8812888971E002BB7D4 /* LetterButtonView.swift in Sources */,
 				D45F51232884965B009CCF94 /* GameView.swift in Sources */,
 				D45F51402884AADA009CCF94 /* GuessView.swift in Sources */,
+				D45784CD28A5AAD3007D31D9 /* UbiquitousStore.swift in Sources */,
 				D49ACD7328A452B400048EA4 /* UIWindow+Extension.swift in Sources */,
 				D49367DE289CA825006344EE /* AvailableWords.swift in Sources */,
 				D436F35E289B1C6700B6AB17 /* Flip.swift in Sources */,
@@ -346,6 +357,7 @@
 				D4CDF8842888ADAB002BB7D4 /* Keyboard.swift in Sources */,
 				D45F51352884A4A9009CCF94 /* Color+Extension.swift in Sources */,
 				D4FF62872889FECC0016708B /* Shake.swift in Sources */,
+				D45784C928A591B9007D31D9 /* HelpView.swift in Sources */,
 				D4A0EDFB28A2E913004858FD /* StatsView.swift in Sources */,
 				D45F51442884B679009CCF94 /* WordleDataModel.swift in Sources */,
 				D49ACD6D28A4305500048EA4 /* AnimeMangaWords.swift in Sources */,
@@ -362,6 +374,7 @@
 				D4CDF8822888971E002BB7D4 /* LetterButtonView.swift in Sources */,
 				D45F51242884965B009CCF94 /* GameView.swift in Sources */,
 				D45F51412884AADA009CCF94 /* GuessView.swift in Sources */,
+				D45784CE28A5AAD3007D31D9 /* UbiquitousStore.swift in Sources */,
 				D49ACD7428A452B400048EA4 /* UIWindow+Extension.swift in Sources */,
 				D49367DF289CA825006344EE /* AvailableWords.swift in Sources */,
 				D436F35F289B1C6700B6AB17 /* Flip.swift in Sources */,
@@ -372,6 +385,7 @@
 				D4CDF8852888ADAB002BB7D4 /* Keyboard.swift in Sources */,
 				D45F51362884A4A9009CCF94 /* Color+Extension.swift in Sources */,
 				D4FF62882889FECC0016708B /* Shake.swift in Sources */,
+				D45784CA28A591B9007D31D9 /* HelpView.swift in Sources */,
 				D4A0EDFC28A2E913004858FD /* StatsView.swift in Sources */,
 				D45F51452884B679009CCF94 /* WordleDataModel.swift in Sources */,
 				D49ACD6E28A4305500048EA4 /* AnimeMangaWords.swift in Sources */,
@@ -498,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WordleClone (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 47E3RRLYKE;
@@ -531,6 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WordleClone (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 47E3RRLYKE;

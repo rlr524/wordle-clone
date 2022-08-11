@@ -26,10 +26,12 @@ class WordleDataModel: ObservableObject {
     @Published var incorrectAttempts = [Int](repeating: 0, count: 6)
     @Published var toastText: String?
     @Published var showStats = false
+    @AppStorage("hardMode") var hardMode = false
 
     var keyColors = [String: Color]()
     var matchedLetters = [String]()
     var misplacedLetters = [String]()
+    var correctlyPlacedLetters = [String]()
     var targetWord = ""
     var currentWord = ""
     var tryIndex = 0
@@ -53,6 +55,7 @@ class WordleDataModel: ObservableObject {
     func newGame() {
         populateDefaults()
         targetWord = AvailableWords.wordList.randomElement() ?? "HELLO"
+        correctlyPlacedLetters = [String](repeating: "-", count: 5)
         currentWord = ""
         inPlay = true
         tryIndex = 0
@@ -88,6 +91,16 @@ class WordleDataModel: ObservableObject {
             inPlay = false
         } else {
             if verifyWord() {
+                if hardMode {
+                    if let toastString = hardModeCorrectCheck() {
+                        showToast(with: toastString)
+                        return
+                    }
+                    if let toastString = hardModeMisplacedCheck() {
+                        showToast(with: toastString)
+                        return
+                    }
+                }
                 setCurrentGuessColors()
                 tryIndex += 1
                 currentWord = ""
@@ -121,6 +134,24 @@ class WordleDataModel: ObservableObject {
         UIReferenceLibraryViewController.dictionaryHasDefinition(forTerm: currentWord)
     }
 
+    func hardModeCorrectCheck() -> String? {
+        let guessLetters = guesses[tryIndex].guessLetters
+        for i in 0...4 where correctlyPlacedLetters[i] != "-" && guessLetters[i] != correctlyPlacedLetters[i] {
+                let formatter = NumberFormatter()
+                formatter.numberStyle = .ordinal
+                return "\(formatter.string(for: i + 1)!) letter must be `\(correctlyPlacedLetters[i])`."
+            }
+        return nil
+    }
+
+    func hardModeMisplacedCheck() -> String? {
+        let guessLetters = guesses[tryIndex].guessLetters
+        for letter in misplacedLetters where !guessLetters.contains(letter) {
+            return ("Must contain the letter `\(letter)`.")
+        }
+        return nil
+    }
+
     func setCurrentGuessColors() {
         let correctLetters = targetWord.map { String($0) }
         var frequency = [String: Int]()
@@ -142,6 +173,7 @@ class WordleDataModel: ObservableObject {
                         misplacedLetters.remove(at: index)
                     }
                 }
+                correctlyPlacedLetters[index] = correctLetter
                 frequency[guessLetter]! -= 1
             }
         }
@@ -196,10 +228,15 @@ class WordleDataModel: ObservableObject {
 
     func shareResult() {
         let stat = Statistic.loadStat()
+        let results = guesses.enumerated().compactMap { $0 }
+        var guessString = ""
+        for result in results where result.0 <= tryIndex {
+            guessString += result.1.results + "\n"
+        }
         let resultString =
         """
         Wordle \(stat.games) \(tryIndex < 6 ? "\(tryIndex + 1)/6" : "")
-        \(guesses.compactMap { $0.results}.joined(separator: "\n"))
+        \(guessString)
         """
         let activityController = UIActivityViewController(activityItems: [resultString], applicationActivities: nil)
         switch UIDevice.current.userInterfaceIdiom {
